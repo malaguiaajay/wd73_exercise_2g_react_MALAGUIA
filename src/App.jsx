@@ -1,5 +1,5 @@
 import Navbar from './component/Navbar.jsx'
-import StudentCard from './component/Footer.jsx'
+import StudentCard from './component/MainContent.jsx'
 
 
 function App() {
@@ -39,11 +39,12 @@ function App() {
     <Navbar/>
 
     {studentCardList}
-
-    <h1 className="text-danger">Hello World!</h1>
+    
     <i className="fa-solid fa-user"></i>
-    <p className="animate__animated animate__bounce">This is a React component</p>
-    <footer/>
+    <h1 className="text-danger"></h1>
+   
+    <p className="animate__animated animate__bounce"></p>
+   
     </>
     )
 }

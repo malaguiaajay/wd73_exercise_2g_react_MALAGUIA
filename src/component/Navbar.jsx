@@ -1,22 +1,31 @@
 function Navbar(){
     return (
         <>
-        <nav className="navbar bg-light">
-            <div className="container">
-                <span className="navbar-brand mb-0 h1">Home</span>
-                <span className="navbar-brand mb-0 h1">About</span>
-                <span className="navbar-brand mb-0 h1">Contact Us</span>
-                <span className="navbar-brand mb-0 h1">Testimonials</span>
-            </div>
+       
+       <div className="container">
+         <div className="row">
+          <nav className="navbar bg-danger d-flex flex-row">
+                   <div className="nav nav-tabs collapse navbar-collapse " id="navbarSupportedContent">
+                   <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        
+                          <span  className="nav-link" aria-current="page" onclick="navigateToHome()">Home</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+                      
+                          <span className="nav-link" onclick="navigateToAbout()">About</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      
+                      
+                          <span className="nav-link" onclick="navigateToJobs()">Jobs</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+                     
+                         <span className="nav-link" onclick="navigateToTestimonial()">Testimonial</span>
+                       
+                       
+                    </ul>
+              
+        </div>
         </nav>
-        <main>
-            <section>
-                main-section
-            </section>
-        </main>
-        <footer>
-            <h1>Footer</h1>
-        </footer>
+     
+        </div>
+        </div>
         </>
     )
 }
